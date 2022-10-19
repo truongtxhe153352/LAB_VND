@@ -1,0 +1,8 @@
+[2022-10-17 13:31:48] INFO [http-nio-8080-exec-6] UserDAOImpl.delete(44) | Delete data------------ username-random25 successful !---------------
+[2022-10-17 13:32:00] INFO [http-nio-8080-exec-6] UserDAOImpl.delete(44) | Delete data------------ username-random47 successful !---------------
+[2022-10-17 13:38:50] INFO [http-nio-8080-exec-8] UserDAOImpl.delete(44) | Delete data------------ username-random28 successful !---------------
+[2022-10-17 13:41:09] INFO [http-nio-8080-exec-6] UserDAOImpl.delete(44) | Delete data------------ username-random40 successful !---------------
+[2022-10-17 13:42:37] INFO [http-nio-8080-exec-5] UserDAOImpl.delete(44) | Delete data------------ username-random24 successful !---------------
+[2022-10-17 13:48:30] INFO [http-nio-8080-exec-6] UserDAOImpl.delete(44) | Delete data------------ username-random3 successful !---------------
+[2022-10-17 13:51:18] INFO [http-nio-8080-exec-1] UserDAOImpl.delete(44) | Delete data------------ username-random15 successful !---------------
+[2022-10-17 14:26:56] INFO [clientInboundChannel-7] UserDAOImpl.insert(28) | Save data------------ chungta@gmail.com successful !---------------

@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Wed Sep 28 14:08:06 ICT 2022:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0183-82ec-96cd-000007999818 
+on database directory D:\Maven_Spring\springexamples - Copy\sampledb with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@4d7e1886 
+Loaded from file:/C:/Users/truon/.m2/repository/org/apache/derby/derby/10.14.2.0/derby-10.14.2.0.jar
+java.vendor=Oracle Corporation
+java.runtime.version=18.0.2.1+1-1
+user.dir=D:\Maven_Spring\springexamples - Copy
+os.name=Windows 11
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

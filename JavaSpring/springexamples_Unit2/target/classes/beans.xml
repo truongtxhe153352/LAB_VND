@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-4.2.xsd
+
+       http://www.springframework.org/schema/tx
+       http://www.springframework.org/schema/tx/spring-tx-4.2.xsd
+              http://www.springframework.org/schema/jdbc
+              http://www.springframework.org/schema/jdbc/spring-jdbc-4.2.xsd
+
+
+"
+
+>
+    <context:annotation-config/>
+
+    <bean id="dataSource"
+          class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="org.apache.derby.jdbc.EmbeddedDriver"/>
+        <property name="url" value="jdbc:derby:D:/Maven_Spring_Unit1/springexamples_Unit2/sampleunit_2;create=true"/>
+        <property name="username" value=""/>
+        <property name="password" value=""/>
+    </bean>
+
+<!--    <bean id="studentJdbcDAO"-->
+<!--          class="edu.java.spring.jdbc.StudentJdbcDAO" init-method="createTableIfNotExist">-->
+<!--        <property name="dataSource" ref="dataSource"/>-->
+<!--    </bean>-->
+
+    <bean id="studentJdbcDAO"
+          class="edu.java.spring.jdbc.StudentJdbcDAO" >
+        <property name="dataSource" ref="dataSource"/>
+        <property name="insertQuery"
+                  value="INSERT INTO STUDENT (name, age) VALUES (?, ?)"/>
+        <property name="updateAgeByNameSQL"
+                  value="UPDATE STUDENT SET age = ? WHERE name = ?"/>
+        <property name="deleteByNameSQL"
+                  value="DELETE FROM STUDENT WHERE name = ?"/>
+    </bean>
+
+    <bean id="transactionManager"
+          class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <jdbc:embedded-database type="DERBY" id="dataSource">
+        <jdbc:script location="classpath:schema.sql"/>
+    </jdbc:embedded-database>
+</beans>

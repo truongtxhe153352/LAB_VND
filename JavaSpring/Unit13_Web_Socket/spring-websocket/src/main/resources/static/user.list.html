@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HN Spring WebSocket</title>
+    <script src="/js/sockjs-0.3.4.min.js"></script>
+    <script src="/js/stomp.js"></script>
+    <script type="text/javascript">
+        var stompClient = null;
+
+        function disconnect() {
+            if (stompClient != null) {
+                stompClient.disconnect();
+            }
+            console.log("Disconnected stomp client....");
+        }
+
+        function connect() {
+            var socket = new SockJS('/message');
+            stompClient = Stomp.over(socket);
+            stompClient.connect({}, function (frame) {
+                console.log('Connected:' + frame);
+                stompClient.subscribe('/topic/chat', function (message) {
+                    var text = JSON.parse(message.body).content;
+                    //  document.getElementById('response').innerHTML = text;
+                    showMessage(text);
+                });
+            })
+            loadListUser()
+        }
+
+        function showMessage(text) {
+            var response = document.getElementById('response');
+            var p = document.createElement('p');
+            p.appendChild(document.createTextNode(text));
+            response.appendChild(p)
+        }
+
+        function createRowUser(item) {
+            let tr = `<tr>
+            <td>${item.username}</td>
+            <td>${item.email}</td>
+            <td>${item.age}</td>
+            <td>${item.groupId}</td>
+            <td><a href="/user.html?name=${item.username}">Update</a></td>
+            <td><a href="/delete/${item.username}" onclick="deleteUser(${item.username})">Delete</a></td>
+        </tr>`;
+            return tr;
+        }
+
+        function deleteUser(name) {
+            if (window.confirm("Are you sure delete: ")) {
+                stompClient.send("/delete/{name}", {}, JSON.stringify({}));
+            }
+            loadListUser();
+        }
+
+        function loadListUser() {
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function () {
+                if (xmlhttp.readyState == XMLHttpRequest.DONE) {
+                    //console.log(xmlhttp.responseText);
+                    var users = JSON.parse(xmlhttp.responseText);
+                    var usersstr = "";
+                    for (var index in users) {
+                        var user = users[index];
+                        usersstr = usersstr + createRowUser(user);
+                    }
+                    document.getElementById("listuser").innerHTML = usersstr;
+                }
+            };
+            xmlhttp.open("GET", "/user/list", true);
+            xmlhttp.send();
+        }
+
+        function deleteUser(username) {
+            if (window.confirm("Are you sure delete: ")) {
+                send();
+                stompClient.send("/delete/user/{name}", {}, JSON.stringify({}));
+            }
+            loadListUser();
+        }
+
+    </script>
+</head>
+<body onload="connect()">
+
+<div id="conversationDiv">
+    <h1>User List</h1>
+    <table style="width: 100%" border="2px">
+        <tr>
+            <td style="color: red">Account</td>
+            <td style="color: red">Email</td>
+            <td style="color: red">Age</td>
+            <td style="color: red">Group</td>
+        </tr>
+        <tbody id="listuser">
+        <!--        <tr>-->
+        <!--            <td>${item.username}</td>-->
+        <!--            <td>${item.email}</td>-->
+        <!--            <td>${item.age}</td>-->
+        <!--            <td>${item.groupId}</td>-->
+        <!--            <td><a href="/delete/user-${item.username}">Delete</a></td>-->
+        <!--        </tr>-->
+        </tbody>
+    </table>
+    <p id="response"></p>
+</div>
+</body>
+</html>
+
+

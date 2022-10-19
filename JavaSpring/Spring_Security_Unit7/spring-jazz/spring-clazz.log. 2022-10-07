@@ -1,0 +1,45 @@
+[2022-10-07 13:57:09] INFO [main] ContextStartEventHandler.onApplicationEvent(32) |  context start application org.springframework.jdbc.datasource.DriverManagerDataSource@fb5aeed
+[2022-10-07 14:05:49] INFO [main] ContextStartEventHandler.onApplicationEvent(35) |  context start application org.springframework.jdbc.datasource.DriverManagerDataSource@73893ec1
+[2022-10-07 14:06:36] INFO [main] ContextStartEventHandler.onApplicationEvent(35) |  context start application org.springframework.jdbc.datasource.DriverManagerDataSource@4001d8c1
+[2022-10-07 14:06:36] INFO [main] ContextStartEventHandler.createTable(49) | Table HN_GROUP already exists !
+[2022-10-07 14:13:42] INFO [main] ContextStartEventHandler.onApplicationEvent(35) |  context start application org.springframework.jdbc.datasource.DriverManagerDataSource@31834a2b
+[2022-10-07 14:13:43] INFO [main] ContextStartEventHandler.createTable(49) | Table HN_GROUP already exists !
+[2022-10-07 14:24:32] INFO [main] ContextStartEventHandler.onApplicationEvent(35) |  context start application org.springframework.jdbc.datasource.DriverManagerDataSource@31834a2b
+[2022-10-07 14:24:33] INFO [main] ContextStartEventHandler.createTable(49) | Table HN_GROUP already exists !
+[2022-10-07 14:26:03] INFO [main] ContextStartEventHandler.onApplicationEvent(35) |  context start application org.springframework.jdbc.datasource.DriverManagerDataSource@31834a2b
+[2022-10-07 14:26:03] INFO [main] ContextStartEventHandler.createTable(49) | Table HN_GROUP already exists !
+[2022-10-07 14:32:07] INFO [main] ContextStartEventHandler.onApplicationEvent(35) |  context start application org.springframework.jdbc.datasource.DriverManagerDataSource@31834a2b
+[2022-10-07 14:32:07] INFO [main] ContextStartEventHandler.createTable(49) | Table HN_GROUP already exists !
+[2022-10-07 14:32:35] INFO [http-nio-8080-exec-6] GroupController.addNew(33) | add new group ------>edu.hanoi.jazz.dao.model.Group@53f9c41b
+[2022-10-07 14:32:38] INFO [http-nio-8080-exec-9] GroupController.addNew(33) | add new group ------>edu.hanoi.jazz.dao.model.Group@165d2bf4
+[2022-10-07 14:32:58] INFO [http-nio-8080-exec-2] GroupController.addNew(33) | add new group ------>edu.hanoi.jazz.dao.model.Group@22a09466
+[2022-10-07 14:33:03] INFO [http-nio-8080-exec-3] GroupController.addNew(33) | add new group ------>edu.hanoi.jazz.dao.model.Group@55226d5c
+[2022-10-07 14:46:34] INFO [main] ContextStartEventHandler.onApplicationEvent(35) |  context start application org.springframework.jdbc.datasource.DriverManagerDataSource@1a8e9ed9
+[2022-10-07 14:46:34] INFO [main] ContextStartEventHandler.createTable(49) | Table HN_GROUP already exists !
+[2022-10-07 14:47:06] INFO [http-nio-8080-exec-6] GroupController.addNew(39) | add new group ------>edu.hanoi.jazz.dao.model.Group@396b9a3e
+[2022-10-07 15:02:00] INFO [main] ContextStartEventHandler.onApplicationEvent(35) |  context start application org.springframework.jdbc.datasource.DriverManagerDataSource@2e0fdbe9
+[2022-10-07 15:02:00] INFO [main] ContextStartEventHandler.createTable(49) | Table HN_GROUP already exists !
+[2022-10-07 15:02:13] INFO [http-nio-8080-exec-4] GroupController.addNew(39) | add new group ------>edu.hanoi.jazz.dao.model.Group@c8974ae
+[2022-10-07 15:02:15] INFO [http-nio-8080-exec-8] GroupController.addNew(39) | add new group ------>edu.hanoi.jazz.dao.model.Group@2c7585ae
+[2022-10-07 15:02:16] INFO [http-nio-8080-exec-10] GroupController.addNew(39) | add new group ------>edu.hanoi.jazz.dao.model.Group@d26477a
+[2022-10-07 15:02:16] INFO [http-nio-8080-exec-2] GroupController.addNew(39) | add new group ------>edu.hanoi.jazz.dao.model.Group@746c840f
+[2022-10-07 15:02:16] INFO [http-nio-8080-exec-9] GroupController.addNew(39) | add new group ------>edu.hanoi.jazz.dao.model.Group@134e35b9
+[2022-10-07 15:03:36] INFO [main] ContextStartEventHandler.onApplicationEvent(35) |  context start application org.springframework.jdbc.datasource.DriverManagerDataSource@19f02280
+[2022-10-07 15:03:36] INFO [main] ContextStartEventHandler.createTable(49) | Table HN_GROUP already exists !
+[2022-10-07 15:04:55] INFO [http-nio-8080-exec-6] GroupController.addNew(39) | add new group ------>edu.hanoi.jazz.dao.model.Group@258e9350
+[2022-10-07 15:06:47] INFO [http-nio-8080-exec-9] GroupController.addNew(39) | add new group ------>edu.hanoi.jazz.dao.model.Group@f9ec1ad
+[2022-10-07 15:08:10] INFO [main] ContextStartEventHandler.onApplicationEvent(35) |  context start application org.springframework.jdbc.datasource.DriverManagerDataSource@1e30db85
+[2022-10-07 15:08:10] INFO [main] ContextStartEventHandler.createTable(49) | Table HN_GROUP already exists !
+[2022-10-07 15:08:39] INFO [http-nio-8080-exec-5] GroupController.addNew(39) | add new group ------>edu.hanoi.jazz.dao.model.Group@68b34755
+[2022-10-07 15:09:49] INFO [main] ContextStartEventHandler.onApplicationEvent(35) |  context start application org.springframework.jdbc.datasource.DriverManagerDataSource@696b52bc
+[2022-10-07 15:09:49] INFO [main] ContextStartEventHandler.createTable(49) | Table HN_GROUP already exists !
+[2022-10-07 15:11:24] INFO [main] ContextStartEventHandler.onApplicationEvent(35) |  context start application org.springframework.jdbc.datasource.DriverManagerDataSource@1e30db85
+[2022-10-07 15:11:24] INFO [main] ContextStartEventHandler.createTable(49) | Table HN_GROUP already exists !
+[2022-10-07 15:11:37] INFO [http-nio-8080-exec-10] GroupDAOImpl.insert(25) | Save group TRINH XUAN TRUONG done!
+[2022-10-07 15:11:37] INFO [http-nio-8080-exec-10] GroupController.addNew(38) | add new group ------>edu.hanoi.jazz.dao.model.Group@7259a8b8
+[2022-10-07 15:13:35] INFO [main] ContextStartEventHandler.onApplicationEvent(35) |  context start application org.springframework.jdbc.datasource.DriverManagerDataSource@1e30db85
+[2022-10-07 15:13:35] INFO [main] ContextStartEventHandler.createTable(49) | Table HN_GROUP already exists !
+[2022-10-07 15:13:56] INFO [http-nio-8080-exec-4] GroupDAOImpl.insert(25) | Save group truongtumeng done!
+[2022-10-07 15:13:56] INFO [http-nio-8080-exec-4] GroupController.addNew(38) | add new group ------>edu.hanoi.jazz.dao.model.Group@66021dc2
+[2022-10-07 15:13:58] INFO [http-nio-8080-exec-2] GroupDAOImpl.insert(25) | Save group truongtumeng done!
+[2022-10-07 15:13:58] INFO [http-nio-8080-exec-2] GroupController.addNew(38) | add new group ------>edu.hanoi.jazz.dao.model.Group@3271e885

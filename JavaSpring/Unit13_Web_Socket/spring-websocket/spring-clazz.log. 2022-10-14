@@ -1,0 +1,7 @@
+[2022-10-14 11:28:38] INFO [clientInboundChannel-5] UserDAOImpl.insert(27) | Save data sa12 successful !
+[2022-10-14 13:32:42] INFO [clientInboundChannel-7] UserDAOImpl.insert(27) | Save data------------ supermen successful !---------------
+[2022-10-14 13:37:01] INFO [clientInboundChannel-7] UserDAOImpl.insert(27) | Save data------------ hero successful !---------------
+[2022-10-14 13:41:54] INFO [clientInboundChannel-7] UserDAOImpl.insert(27) | Save data------------ admin successful !---------------
+[2022-10-14 13:47:52] INFO [clientInboundChannel-16] UserDAOImpl.insert(27) | Save data------------ khachhang1 successful !---------------
+[2022-10-14 14:01:17] INFO [clientInboundChannel-7] UserDAOImpl.insert(27) | Save data------------ admins successful !---------------
+[2022-10-14 14:10:31] INFO [clientInboundChannel-7] UserDAOImpl.insert(27) | Save data------------ test successful !---------------
